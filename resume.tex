@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez, Sourabh Bajaj, Tobias Pfanzelter
+% Based off of: https://github.com/sb2nov/resume (MIT license)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Tobias Pfandzelter} \\
+    \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ +49 172 960 8059 ~ \href{mailto:tobias@pfandzelter.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{tobias@pfandzelter.com}} ~
+    \href{https://pfandzelter.com/}{\raisebox{-0.2\height}\faGlobe\ \underline{pfandzelter.com}} \\
+    \vspace{5pt}
+    Third-year Computer Science PhD candidate in the field of distributed and scalable software systems. Current research interests include edge and fog computing, particularly in the context of novel LEO satellite communication systems.
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technische Universität Berlin}{Sep. 2019 -- present}
+      {Computer Science, Doctoral Degree}{Berlin, Germany}
+      \resumeSubheading
+      {Center for Cultural Studies on Science and Technology in China (CCST)}{Mar. 2020}
+      {China Master Label}{Berlin, Germany}
+      \resumeSubheading
+      {Tongji University Shanghai}{Sep. 2017}
+      {``Smart Shanghai'' Summer School}{Shanghai, China}
+      \resumeSubheading
+      {Technische Universität Berlin}{Oct. 2017 -- Aug. 2019}
+      {\begin{tabular}[l]{@{}l@{}}Master of Science in Computer Science\\Distributed Systems and Networks Focus\\Grade 1.0 (equiv. 4.0 GPA)\end{tabular}}{Berlin, Germany}
+      \resumeSubheading
+      {Technische Universität Berlin}{Oct. 2014 -- Mar. 2018}
+      {Bachelor of Science in Computer Science}{Berlin, Germany}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PUBLICATIONS-----------
+\section{Select Peer-Reviewed Publications}
+ \begin{itemize}[leftmargin=0.15in]
+    \small{
+    \item T. Pfandzelter and D. Bermbach, ``Edge (of the Earth) Replication: Optimizing Content Delivery in Large LEO Satellite Communication Networks,'' in \emph{Proceedings of the 2021 IEEE/ACM 21st International Symposium on Cluster, Cloud and Internet Computing (CCGrid)}, Melbourne, Australia, May 2021.
+    \item T. Pfandzelter, J. Hasenburg, and D. Bermbach, ``Towards a Computing Platform for the LEO Edge,'' in \emph{Proceedings of EuroSys ’21: Sixteenth European Conference on Computer Systems}, Online, United Kingdom, Apr. 2021.
+    \item T. Pfandzelter and D. Bermbach, ``tinyFaaS: A Lightweight FaaS Platform for Edge Environments,'' in \emph{Proceedings of the 2020 IEEE International Conference on Fog Computing (ICFC)}, Sydney, Australia, Apr. 2020, pp. 17–24.
+    }
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\begin{tabular}[l]{@{}l@{}}Mobile Cloud Computing Research Group,\\Technische Universität Berlin \& Einstein Center Digital Future\end{tabular}}{Sep. 2019 -- present}
+      {Research Associate}{Berlin, Germany}
+      \resumeItemListStart
+        \resumeItem{Responsible for the \emph{FogStore} project, which aims to develop a data management middleware for the fog.}
+        \resumeItem{Extensive development of open-source software prototypes.}
+        \resumeItem{Authored and published several research papers in this context.}
+        \resumeItem{Supervising student assistants, student projects, and student theses.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {audibene GmbH}{Mar. 2015 -- Aug. 2019}
+      {Systems Administrator}{Berlin, Germany}
+      \resumeItemListStart
+        \resumeItem{Administered internal IT systems such as MS Office 365, Zoom, and MS Active Directory.}
+        \resumeItem{Developed custom software for infrastructure monitoring.}
+        \resumeItem{Procurement and management of IT equipment.}
+        \resumeItem{Set up and administered enterprise networks, including virtual, wireless, and wired networking.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Coca-Cola Erfrischungsgetränke AG}{Sep. 2014}
+      {IT Intern}{Berlin, Germany}
+      \resumeItemListStart
+        \resumeItem{Developed custom Outlook extensions for internal use.}
+        \resumeItem{Worked with various groups of the IT department.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Go (highly proficient), Python, JavaScript, HTML/CSS (proficient), Java, C\#} \\
+     \textbf{Technologies}{: Docker, Linux, Networking, Web \& Internet, AWS, GCP, Microsoft Azure} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%
+%-----------LANGUAGES-----------
+
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{German}{: Native} \\
+     \textbf{English}{: C1 level}} \\
+     \textbf{Mandarin}{: A1 level}} \\
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
